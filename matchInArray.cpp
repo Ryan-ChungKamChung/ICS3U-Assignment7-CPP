@@ -13,14 +13,12 @@ template<size_t N>
 int match(std::array<int, N> random_numbers, int number) {
     // Checks if there are any matches
 
-    int match;
+    int match = 0;
 
     for (int single_element : random_numbers) {
         if (number == single_element) {
             match = 1;
             break;
-        } else {
-            match = 0;
         }
     }
 
